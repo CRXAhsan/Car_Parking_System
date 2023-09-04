@@ -63,11 +63,11 @@ void viewVehicle(const string &filename)
     ifstream infile(filename);
     string line;
 
-    cout << "######           Vehicles Present in the Parking Plot          ######"<<endl;
+    cout << "######           Vehicles Present in the Parking Plot          ######" << endl;
     int countVehicle = 1;
     while (getline(infile, line))
     {
-        
+
         size_t commaPos1 = line.find(',');
         size_t commaPos2 = line.find(',', commaPos1 + 1);
         size_t commaPos3 = line.find(',', commaPos2 + 1);
